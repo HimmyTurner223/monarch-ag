@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:helloworld/page3.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -12,18 +13,16 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Hello World',
       // Application theme data, you can set the colors for the application as
       // you want
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData(primarySwatch: Colors.deepOrange),
       // A widget which will be started on application startup
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Monarch Ag'),
     );
   }
 }
 
 class MyHomePage extends StatelessWidget {
   final String title;
-  const MyHomePage({super.key, required this.title});  
+  const MyHomePage({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -33,10 +32,16 @@ class MyHomePage extends StatelessWidget {
         title: Text(title),
       ),
       body: Center(
-        child: Text(
-          'Hello, World!',
+          child: TextButton(
+        onPressed: () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => const Page3()));
+        },
+        child: const Text(
+          'Get Started',
+          style: TextStyle(fontSize: 30),
         ),
-      ),
+      )),
     );
   }
 }
