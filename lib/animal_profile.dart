@@ -63,6 +63,27 @@ class _AnimalProfileState extends State<AnimalProfile> {
                     ),
                   ),
                   Text('Type of Feed'),
+                  Padding(
+                    padding: const EdgeInsets.only(
+                        left: 10.0, right: 10.0, top: 8.5, bottom: 8.5),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        contentPadding: EdgeInsets.symmetric(vertical: 0.0),
+                        border: OutlineInputBorder(),
+                      ),
+                    ),
+                  ),
+                  Text('Amount of Feed'),
+                  Padding(
+                    padding: const EdgeInsets.only(
+                        left: 10.0, right: 10.0, top: 8.5, bottom: 8.5),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        contentPadding: EdgeInsets.symmetric(vertical: 0.0),
+                        border: OutlineInputBorder(),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             )
