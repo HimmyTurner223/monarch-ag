@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:helloworld/animal_profile.dart';
 import 'package:helloworld/progress.dart';
+import 'package:helloworld/records.dart';
 import 'package:helloworld/settings.dart';
 
 class HomePage extends StatefulWidget {
@@ -18,10 +19,7 @@ class _HomePageState extends State<HomePage> {
   static List<Widget> _widgetOptions = <Widget>[
     const AnimalProfile(),
     const Progress(),
-    const Text(
-      'Index 3: Diet',
-      style: optionStyle,
-    ),
+    const Records(),
     SettingsOnePage(),
   ];
 
